@@ -7,6 +7,10 @@ var mongoose = require('mongoose')
 
 mongoose.Promise = Promise
 
+var redirectToHTTPS = require('express-http-to-https').redirectToHTTPS
+
+app.use(redirectToHTTPS([/localhost:(\d{4})/], [/\/insecure/]));
+
 app.use(express.static(__dirname))
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
