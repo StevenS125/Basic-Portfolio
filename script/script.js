@@ -84,13 +84,13 @@ function addMessage(message) {
 }
 
 function getMessages() {
-    $.get('http://localhost:3000/messages', (data) => {
+    $.get('https://steve-snyder.herokuapp.com/messages', (data) => {
         data.forEach(addMessage);
     })
 }
 
 function postMessage(message) {
-    $.post('http://localhost:3000/messages', message)
+    $.post('https://steve-snyder.herokuapp.com/messages', message)
 }
 
 });
