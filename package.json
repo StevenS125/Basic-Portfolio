@@ -1,0 +1,30 @@
+{
+  "name": "basic-portfolio",
+  "version": "1.0.0",
+  "description": "landing page for my development",
+  "main": "server.js",
+  "scripts": {
+    "test": "jasmine",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StevenS125/Basic-Portfolio.git"
+  },
+  "author": "Steven Snyder",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mongoose": "^5.0.3",
+    "socket.io": "^2.0.4"
+  },
+  "devDependencies": {
+    "jasmine": "^2.9.0",
+    "request": "^2.83.0"
+  },
+  "bugs": {
+    "url": "https://github.com/StevenS125/Basic-Portfolio/issues"
+},
+"homepage": "https://dzv10vzj6zrr5.cloudfront.net/"
+}

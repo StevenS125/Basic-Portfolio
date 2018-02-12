@@ -1,3 +1,5 @@
+$(document).ready(function () {
+
 var TxtRotate = function(el, toRotate, period) {
   this.toRotate = toRotate;
   this.el = el;
@@ -55,13 +57,40 @@ window.onload = function() {
   document.body.appendChild(css);
 };
 
-
-
-$(document).ready(function () {
   // Handler for .ready() called.
-  $("#someID").click(function(){
-      $('html, body').animate({
-          scrollTop: $('#bottom').offset().top
-      }, 'slow');
-  });
+  $('#someId').click(function(){
+    $('html, body').animate({
+        scrollBottom: $('#contact').offset().top
+    }, 'slow');
+});
+
+var socket = io()
+
+$(() => {
+    $("#send").click(() => {
+        var message = {
+            name: $("#name").val(),
+            message: $("#message").val()
+        }
+        postMessage(message)
+    })
+    getMessages()
+})
+
+socket.on('message', addMessage)
+
+function addMessage(message) {
+    $("#messages").append(`<h4> ${message.name} </h4> <p> ${message.message} </p>`)
+}
+
+function getMessages() {
+    $.get('http://localhost:3000/messages', (data) => {
+        data.forEach(addMessage);
+    })
+}
+
+function postMessage(message) {
+    $.post('http://localhost:3000/messages', message)
+}
+
 });

@@ -27,7 +27,7 @@
                       <a class="nav-link" href="#">Projects</a>
                     </li>
                     <li class="nav-item">
-                      <a id="someID" class="nav-link" target="_blank">Social Media</a>
+                      <a id="someId" class="nav-link">Social Media</a>
                     </li>
                   </ul>
                 </div>
@@ -40,6 +40,40 @@
      data-period="3000"
      data-rotate='[ "User Interfaces", "Web Applications", "Landing Pages", "Personal Websites" ]'></span>
 </div>
+<button id="buttoncon" type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#exampleModal">Connect with Me!</button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="false">
+                  <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Let's Connect</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+                          </div>
+                          <div class="modal-body">
+                              <form>
+                                <h1 class="display-4">Send Message</h1>
+                                <br>
+                                <input id="name" class="form-control" placeholder="Name">
+                                <br>
+                                <textarea id="message" class="form-control" placeholder="Message"></textarea>
+                                <br>
+                              </form>
+                          </div>
+                          <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                              <button type="button" id="send" class="btn btn-primary">Get Connected!</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+
+
+
 </div>
 <div id="container">
   <div class="row">
@@ -87,12 +121,16 @@
 </footer>
 
    
-    <!-- AJax/ jQuery call -->
+    <!--Jquery Library CDN-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <!--Bootstrap Library CDN-->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-   <!-- Linking to Script file -->
-    <script type="text/javascript" src="script/script.js"></script>
+  
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <!-- Linking to Script file -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="script/script.js"></script>
+
 </body>
 
 </html>
