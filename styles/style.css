@@ -142,3 +142,10 @@ However, delay the fade out process for 2.5 seconds */
     }
 
 }
+
+#foreximg {
+    width: 100%;
+    height: 100%;
+    border: 2px solid;
+    border-color: #222;
+}
