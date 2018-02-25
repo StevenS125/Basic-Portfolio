@@ -17,8 +17,8 @@ html,body {
   }
 
   #container {
-background-color: #ffff;
-color: black
+background-color:#212529;
+color: #ffffff;
   }
 
   i.fa {
@@ -49,8 +49,10 @@ color: black
   footer {
       margin: auto;
       text-align: center;
-      margin-bottom: 20px;
+      margin-bottom: -20px;
       margin-top: 20px;
+      background-color: #212529;
+      color: #ffffff;
 
   }
 
@@ -139,13 +141,78 @@ However, delay the fade out process for 2.5 seconds */
 
 }
 
+/* Bottom Container with Project images */
+
+#bottomimg {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
 #foreximg {
     width: 100%;
-    height: 100%;
+    height: 55%;
     border: 2px solid;
     border-color: #222;
 }
 
+#foreximg:hover {
+cursor: pointer;
+
+
+
+}
+
 .social-links {
     color: #ffffff;
+}
+
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.bg,
+.overlay {
+  text-align: center;
+}
+
+img,
+.overlay {
+  transition: .3s all;
+  border-radius: 3px;
+}
+
+.bg {
+  margin: .5%;
+}
+.bg img {
+  width: 100%;
+  margin-bottom: -4px;
+}
+.bg .overlay {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  width: 95%;
+  background: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  opacity: 0;
+}
+.bg .overlay h4 {
+
+  font-family: 'Droid Serif', serif;
+}
+.bg .overlay p {
+  font-family: 'Droid Serif', sans-serif;
+}
+.bg:hover .overlay {
+  opacity: 1;
+}
+.bg:hover img {
+  -webkit-filter: blur(2px);
+  filter: blur(2px);
 }
