@@ -113,3 +113,15 @@ $("#scroller").click(function() {
       scrollTop: $("#contact").offset().top
   }, 2000);
 });
+
+$("#scrollPort").click(function() {
+  $('html, body').animate({
+      scrollTop: $("#container2").offset().top
+  }, 2000);
+});
+
+$("#scrollbout").click(function() {
+  $('html, body').animate({
+      scrollTop: $("#buttoncon").offset().top
+  }, 2000);
+});
