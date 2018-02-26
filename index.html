@@ -10,13 +10,14 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="styles/style.css">
     <!-- link to google font -->
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Pacifico" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
 </head>
 <body>
 
   <!-- Nav -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <a class="navbar-brand" href="#">Steven Snyder</a>
+                <a class="navbar-brand expert" href="#">Steven Snyder</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
@@ -94,24 +95,25 @@
 <div id="container">
   <div class="row">
     <div id="intro" class="col-md-8">
-      <h3 class="intro slate"><strong> Expertise</strong></h3>
+      <br>
+      <h3 class="intro slate expert"><strong>Expertise</strong></h3>
       <p class="statement gunmetal">I have experience in all phases of the design process.</p>
     </div>
   </div>
   <div class="row">
-    <div class="col-md-4">
+    <div class="col-lg-4 col-xl-4 col-md-4 col-sm-12 col-xs-12">
       <div class="expertise-block"><i class="fa fa-diamond yellow"></i>
         <h4 class="title slate">Ideas</h4>
         <p class="summary">I collaborate with clients and peers to nurture and transform ideas into well thought out design specs. After all, that's where the majority of amazing user experiences start.</p>
       </div>
     </div>
-    <div class="col-md-4">
+    <div class="col-lg-4 col-xl-4 col-md-4 col-sm-12 col-xs-12">
       <div class="expertise-block"><i class="fa fa-magic"></i>
         <h4 class="title slate">UX/UI</h4>
         <p class="summary">I sketch and wireframe interfaces focusing on content structure, intuitive UI patterns and simple interactions. I'm a minimalist who truly believes that less is more.</p>
       </div>
     </div>
-    <div class="col-md-4">
+    <div class="col-lg-4 col-xl-4 col-md-4 col-sm-12 col-xs-12">
       <div class="expertise-block"><i class="fa fa-code yellow"></i>
         <h4 class="title slate">Code</h4>
         <p class="summary">I design in the browser with HTML5, CSS3 a JavaScript. I love coding things from scratch, but I can work with front-end frameworks like Bootstrap, React and Angular too.</p>
@@ -121,10 +123,10 @@
 </div>
 
 <!-- Portfolio/Github section -->
-
 <div id="container2">
   <div class="row ">
     <div id="intro" class="col-md-8 col-lg-8 col-sm-12 col-xs-12">
+      <br>
       <h3 class="intro slate"><strong>Check Out my Previous Projects!</strong></h3>
     </div>
   </div>
@@ -178,14 +180,15 @@
         <br>
   </div>
   </div>
-
+<br>
   <div class="col-md-12 col-lg-12 col-xl-12 col-sm-12 col-xs-12">
 <div id="aboutContainer">
     <h4 class="expertise-block"><strong>About Me</strong></h4>
     <span>
         <button id="buttoncon" type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">Connect with Me!</button>
+        <div id="footfire"><canvas class="fireworks"></canvas></div>     
+     
       </span>
-      <br>
 </div>
   </div>
 
@@ -208,6 +211,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src="/socket.io/socket.io.js"></script>
+<script src="script/anime.min.js" type="text/javascript"></script>
 <script src="script/script.js"></script>
 
 </body>

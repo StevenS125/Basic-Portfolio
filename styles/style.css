@@ -38,6 +38,14 @@ color: #212529;
       text-align: center;
   }
 
+.expert {
+    font-family: 'Pacifico', cursive;
+}
+
+p {
+    font-family: 'Oswald', sans-serif;
+}
+
   #intro {
       text-align: center;
       margin: auto;
@@ -223,4 +231,16 @@ img,
 
 #aboutContainer {
     text-align: center;
+}
+
+
+#footfire {
+    height: 100px;
+    width: 150px;
+    margin: auto;
+}
+
+canvas.fireworks {
+    height: 100px !important;
+    width: 150px !important;
 }
