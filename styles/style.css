@@ -42,6 +42,10 @@ color: #212529;
     font-family: 'Pacifico', cursive;
 }
 
+#aboutSect {
+    margin: auto;
+}
+
 p {
     font-family: 'Oswald', sans-serif;
 }
