@@ -110,7 +110,7 @@ function myFunction() {
 
 $("#scroller").click(function() {
   $('html, body').animate({
-      scrollTop: $("#contact").offset().top
+      scrollTop: $("#buttoncon").offset().top
   }, 2000);
 });
 
@@ -122,6 +122,6 @@ $("#scrollPort").click(function() {
 
 $("#scrollbout").click(function() {
   $('html, body').animate({
-      scrollTop: $("#buttoncon").offset().top
+      scrollTop: $("#aboutContainer").offset().top
   }, 2000);
 });
