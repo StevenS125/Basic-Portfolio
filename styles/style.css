@@ -29,6 +29,11 @@ color: #212529;
 
   }
 
+  #aboutContainer {
+    background-color:#ffffff;
+    color: #212529;
+      }
+
   i.fa {
       text-align: center;
       font-size: 30px;
@@ -233,10 +238,6 @@ img,
 
 /* About Container */
 
-#aboutContainer {
-    text-align: center;
-    background-color: #ffffff;
-}
 
 
 #footfire {
