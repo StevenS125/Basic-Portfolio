@@ -4,6 +4,8 @@ html,body {
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
     padding: 0 !important;
+    margin: 0px;
+    overflow-x: hidden; 
   }
   
   #herofirst { 
