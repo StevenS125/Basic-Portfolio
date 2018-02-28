@@ -11,7 +11,7 @@ app.use(express.static(__dirname))
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
 
-var dbUrl = 'mongodb://user:123456As@ds251548.mlab.com:51548/portfoliostevo';
+var dbUrl = 'mongodb://user:user@ds249707.mlab.com:49707/socketchatapp';
 
 var Message = mongoose.model('Message', {
     name: String,
