@@ -64,12 +64,16 @@ window.onload = function() {
     }, 'slow');
 });
 
+
+//  Socket messaging
+
 var socket = io()
 
 $(() => {
     $("#send").click(() => {
         var message = {
             name: $("#name").val(),
+            email:$("#email").val(),
             message: $("#message").val()
         }
         postMessage(message)
@@ -80,7 +84,7 @@ $(() => {
 socket.on('message', addMessage)
 
 function addMessage(message) {
-    $("#messages").append(`<h4> ${message.name} </h4> <p> ${message.message} </p>`)
+    $("#messages").append(`<h4> ${message.name} </h4> <p>${message.email}</p> <p> ${message.message} </p>`)
 }
 
 function getMessages() {
