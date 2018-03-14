@@ -33,8 +33,8 @@ body {
     stroke-dasharray: 900;
     stroke-linecap: butt;
     stroke-linejoin: round;
-    -webkit-animation: dash 2.5s ease-in-out forwards;
-            animation: dash 2.5s ease-in-out forwards;
+    -webkit-animation: dash 1.5s ease-in-out forwards;
+            animation: dash 1.5s ease-in-out forwards;
   }
   svg.introgo .text-stroke:nth-child(2) {
     -webkit-animation-delay: .3s;
